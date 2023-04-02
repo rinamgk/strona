@@ -1,0 +1,197 @@
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    background-color: #E5E5E5;
+	
+	
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+
+
+.background {
+	background-image: url(images/fon-abstraktsiia-zheltyi-linii-background-geometriia-seryi.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40vh;
+	width: 100%;
+  }
+  .blur {
+	animation: changeWidth 8s ease-in-out infinite;
+	background: rgba(255, 255, 255, 0.2); 
+	backdrop-filter: blur(8px);
+	border-right: 1px solid whitesmoke;
+	height: 40vh;
+  }
+  .multiple-filters {
+	backdrop-filter: blur(20px) saturate(120%) contrast(200%);
+  }
+  @keyframes changeWidth {
+	0% {
+	  width: 0%;
+	}
+	5% {
+	  width: 0%;
+	}
+	50% {
+	  width: 100%;
+	}
+	80% {
+	  width: 50%;
+	}
+	100% {
+	  width: 0%;
+	}
+  }
+  .btn {
+	backface-visibility: hidden;
+	background: whitesmoke;
+	border: none;
+	color: black;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 300;
+	left: 50%;
+	padding: 12px 16px;
+	position: absolute;
+	top: 10%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+
+	&:focus {
+	  outline: none;
+	}
+  }
+  .title {
+	backface-visibility: hidden;
+	border: none;
+	color: whitesmoke;
+	cursor: pointer;
+	font-size: 50px;
+	font-weight: 600;
+	left: 50%;
+	padding: 12px 16px;
+	position: absolute;
+	top: 30%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+  }
+
+.menu-main i::before {
+
+	font-weight: 800;
+  content: "\f0c9";
+   font-family: 'Font Awesome 5 Free';
+   font-size: 30px;
+   color: black;
+   font-style: normal;
+   margin-left: 50%;
+   backface-visibility: hidden;
+	border: none;
+	cursor: pointer;
+	padding: 12px 16px;
+	position: absolute;
+	top: 105px;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+   
+}
+
+
+
+.icons {
+	display: block;
+	width: 60%;
+	float: left;
+	transition: width .2s;
+	
+}
+@media only screen and (min-width: 450px) {
+	.icons {
+		width: 30%;
+	}
+}
+
+@media only screen and (min-width: 450px) {
+	.icons {
+		width: 35%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.icons {
+		width: 30%;
+	}
+}
+.product {
+	display: block;
+	border: 1px solid ;
+	border-radius: 3px;
+	position: relative;
+	margin: 10px;
+	text-decoration: none;
+	z-index: 0;
+	margin-top: 35%;
+	margin-bottom: -95px;
+	
+	
+}
+.icons {
+	list-style: line;
+	margin: 25px -25px 10px 40px;
+	padding: 0;
+}
+.product-photo {
+	position: relative;
+	padding-bottom: 100%;
+	overflow: hidden;
+	
+}
+.product-photo img {
+	position: absolute;
+	object-fit: cover;
+	margin: -50px -70px -30% -100px;
+	transition: all .4s ease-out;
+}
+.product-photo:hover  img {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.footer {
+	background: url(images/fon-abstraktsiia-zheltyi-linii-background-geometriia-seryi.jpg) no-repeat;
+	position: absolute;
+	left: 0;
+	bottom: -950px;
+	width: 100%;
+	height: 80px;
+	
+
+}
+.blur-footer {
+	background: rgba(255, 255, 255, 0.2); 
+	backdrop-filter: blur(5px);
+	border-right: 1px solid whitesmoke;
+	height: 80px;
+}
+.text {
+	text-align: center;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+	color: bisque;
+	margin-top: 30px;
+	text-shadow: #E5E5E5 10px 4px 10px;
+
+	
+}
